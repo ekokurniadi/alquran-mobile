@@ -2,12 +2,12 @@ import 'dart:convert';
 
 import 'package:alquran_mobile/core/constant/app_constant.dart';
 import 'package:alquran_mobile/core/usecases/usecases.dart';
-import "package:dartz/dartz.dart";
-import "package:alquran_mobile/core/error/failures.dart";
+import 'package:dartz/dartz.dart';
+import 'package:alquran_mobile/core/error/failures.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import "surah_local_datasource.dart";
-import "package:alquran_mobile/features/surah/data/models/surah_model.codegen.dart";
+import 'surah_local_datasource.dart';
+import 'package:alquran_mobile/features/surah/data/models/surah_model.codegen.dart';
 
 @LazySingleton(as: SurahLocalDataSource)
 class SurahLocalDataSourceImpl implements SurahLocalDataSource {
@@ -78,7 +78,7 @@ class SurahLocalDataSourceImpl implements SurahLocalDataSource {
         AppConstant.favoriteSurahKey,
         jsonEncode(listSurah),
       );
-      
+
       return right(listSurah);
     } catch (e) {
       return left(DatabaseFailure(errorMessage: e.toString()));

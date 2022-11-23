@@ -1,11 +1,11 @@
 import 'package:alquran_mobile/core/constant/app_constant.dart';
 import 'package:alquran_mobile/core/usecases/usecases.dart';
-import "package:dartz/dartz.dart";
-import "package:alquran_mobile/core/error/failures.dart";
+import 'package:dartz/dartz.dart';
+import 'package:alquran_mobile/core/error/failures.dart';
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import "surah_remote_datasource.dart";
-import "package:alquran_mobile/features/surah/data/models/surah_model.codegen.dart";
+import 'surah_remote_datasource.dart';
+import 'package:alquran_mobile/features/surah/data/models/surah_model.codegen.dart';
 
 @LazySingleton(as: SurahRemoteDataSource)
 class SurahRemoteDataSourceImpl implements SurahRemoteDataSource {

@@ -1,8 +1,8 @@
 import 'package:alquran_mobile/features/surah/domain/entities/surah_entity.codegen.dart';
-import "package:freezed_annotation/freezed_annotation.dart";
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-part "surah_model.codegen.freezed.dart";
-part "surah_model.codegen.g.dart";
+part 'surah_model.codegen.freezed.dart';
+part 'surah_model.codegen.g.dart';
 
 @freezed
 class SurahModel with _$SurahModel {
